@@ -14,7 +14,7 @@ until docker run -i --link "$docker_container":postgres --rm postgres sh -c "$cm
   echo -n "."
   sleep 1
   counter=$((counter+1))
-  if [ $counter -eq 60 ]
+  if [ $counter -eq 90 ]
   then
     echo $'\nConnection to database failed: timeout.'
     exit 1
